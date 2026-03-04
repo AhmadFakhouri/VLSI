@@ -1,1 +1,19 @@
 
+.SUBCKT anda A B C I Gnd Vdd
+M1 Y A N5 Gnd NMOS L=0.5u W=5u AD=66p PD=24u AS=66p PS=24u
+M2 N5 B N6 Gnd NMOS L=0.5u W=5u AD=66p PD=24u AS=66p PS=24u
+M3 N6 C Gnd Gnd NMOS L=0.5u W=5u AD=66p PD=24u AS=66p PS=24u
+M4 Y B Vdd Vdd PMOS L=0.5u W=10u AD=66p PD=24u AS=66p PS=24u
+M5 Y A Vdd Vdd PMOS L=0.5u W=10u AD=66p PD=24u AS=66p PS=24u
+M6 Y C Vdd Vdd PMOS L=0.5u W=10u AD=66p PD=24u AS=66p PS=24u
+. ENDS
+
+.SUBCKT inva I Y Gnd Vdd
+M1 Y D Gnd Gnd NMOS L=0.5u W=5u AD=66p PD=24u AS=66p PS=24u
+M2 Y D Vdd Vdd PMOS L=0.5u W=10u AD=66p PD=24u AS=66p PS=24u
+. ENDS
+
+* Main circuit: FINAL AND
+Xanda 1 A B C N1 Gnd Vdd anda
+Xinva 1 N1 Y Gnd Vdd inva
+* End of main circuit: FINAL AND
