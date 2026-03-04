@@ -13,7 +13,9 @@ This project covers the full-custom CMOS design and simulation of a 3-bit magnit
 
 * **Logic Verification**: Confirmed that the output matches the truth table for all possible 3-bit input combinations.
 * **Switching Stability**: Used DC analysis to set a stable switching point at 2.5V, providing strong noise margins.
-* **Timing Analysis**: Measured the propagation delay to ensure high-speed operation, achieving a rise time of 318.9ps and a fall time of 325.3ps.
+* **Timing Analysis**: Measured the propagation delay to ensure high-speed operation under transient conditions:
+    * **Rising Edge**: 904 ps
+    * **Falling Edge**: 1.42 ns
 
 ## Repository Contents
 
