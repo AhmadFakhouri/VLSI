@@ -19,6 +19,6 @@ This project covers the full-custom CMOS design and simulation of a 3-bit magnit
 ## Repository Contents
 
 * **Schematic_Modules**: High-resolution S-Edit schematics for the 3-bit system and individual logic modules.
-* **DC-Analysis**: Voltage Transfer Characteristic (VTC) curves and noise margin optimizations.
+* **DC-Analysis**: DC sweep simulation results.
 * **Netlists**: The raw T-Spice code used for the transistor-level simulations.
 * **Validation**: Functional verification tests proving the comparison logic works.
