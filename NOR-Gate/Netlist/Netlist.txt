@@ -1,8 +1,0 @@
-Main circuit NOR
-M1 Y X Gnd Gnd NMOS L=0.5u W=lu AD=66p PD=24u AS=66p PS=24u
-M2 Y X Gnd Gnd NMOS L=0.5u W=lu AD=66p PD=24u AS=66p PS=24u
-M3 Y X Gnd Gnd NMOS L=0.5u W=lu AD=66p PD=24u AS=66p PS=24u
-M4 N1 X Vdd Vdd PMOS L=0.5u W=20u AD=66p PD=24u AS=66p PS=24u
-M5 N2 X N1 Vdd PMOS L=0.5u W=20u AD=66p PD=24u AS=66p PS=24u
-M6 Y X N2 Vdd PMOS L=0.5u W=20u AD=66p PD=24u AS=66p PS=24u
- End of main circuit NOR
